@@ -1,0 +1,4 @@
+create table likes (
+FOREIGN key (country_id) REFERENCES countries(country_id) ,
+FOREIGN key (vection_id) REFERENCES vacations (vacation_id) ,
+)
