@@ -1,9 +1,10 @@
-create table users (
-id SERIAL primary key , 
-first_name VARCHAR(10),
-last_name VARCHAR(10),
-email VARCHAR(50) UNIQUE not null ,
-password varchar(20) not null,
-role_id INT,
-foreign key (role_id) REFERENCES roles(id)
-);
+create table vacations (
+vacation_id INT primary key ,
+country_id INT ,
+FOREIGN key (country_id) REFERENCES countries(country_id) ,
+vacation_decrption TEXT ,
+start_date DATE ,
+end_date DATE ,
+price INT ,
+picture_file VARCHAR(50)
+)
