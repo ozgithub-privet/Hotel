@@ -1,5 +1,3 @@
-USE test
-
 create table roles (
 id SERIAL primary key , 
 role_name enum('admin', 'user') NOT NULL
