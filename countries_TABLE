@@ -1,0 +1,5 @@
+
+create table countries (
+country_id INT primary key ,
+country_name VARCHAR(56)
+)
