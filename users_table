@@ -1,9 +1,9 @@
-
 create table users (
 id SERIAL primary key , 
 first_name VARCHAR(10),
 last_name VARCHAR(10),
-email UNIQUE not null ,
-password varchar(20) notnull,
-foreign key (role_id) REFERENCES role(id)
+email VARCHAR(50) UNIQUE not null ,
+password varchar(20) not null,
+role_id INT,
+foreign key (role_id) REFERENCES roles(id)
 );
