@@ -2,5 +2,5 @@ USE test
 
 create table roles (
 id SERIAL primary key , 
-role_name VARCHAR(5)
+role_name enum('admin', 'user') NOT NULL
 );
