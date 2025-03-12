@@ -1,0 +1,6 @@
+USE test
+
+create table roles (
+id SERIAL primary key , 
+role_name VARCHAR(5)
+);
